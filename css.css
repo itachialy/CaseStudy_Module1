@@ -1,0 +1,73 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+img {
+    width: 100%;
+    height: 750px;
+    display: table ; /* Đảm bảo hiển thị hình ảnh theo dòng mới */
+    margin: 0 auto; /* Căn giữa hình ảnh */
+}
+
+#table1 {
+    margin: 100px auto;
+    border-collapse: collapse;
+    width: 80%;
+    color: #F0F8FF;
+    background: #c5ff53 ;
+}
+#table2 {
+    margin: 100px auto;
+    border-collapse: collapse;
+    width: 80%;
+    color: #F0FFF0;
+    background: #F0FFFF ;
+}
+
+th, td {
+    padding: 10px;
+    border: 1px solid #2F4F4F;
+    color: #191970;
+}
+
+
+thead {
+    background-color: #f2f2f2;
+}
+
+h1 {
+    text-align: center;
+    color: #333;
+}
+
+button {
+    padding: 8px 15px;
+    cursor: pointer;
+    background-color: #FF7F50;
+    color: #FFFFF0;
+    border: none;
+    border-radius: 4px;
+    text-align: center;
+}
+
+button:hover {
+    background-color: #FFC0CB;
+}
+
+input[type="text"], input[type="date"], select {
+    width: 100%;
+    padding: 8px 12px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+.hidden {
+    display: none;
+}

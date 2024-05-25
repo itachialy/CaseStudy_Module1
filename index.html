@@ -1,0 +1,77 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<img src="https://pbs.twimg.com/media/FAmjmBYWYAAL4sd.jpg" alt="Bluelock Kaiser" >
+<h1 style="color: #0000FF">Quản Lý Học Viện Blue Lock</h1>
+<form id="formred">
+    <table id="table1" border="1" style="border-collapse: collapse">
+
+        <tr id="id1">
+            <th colspan="2" style="color: #0000CD"> Thông tin Học Viên</th>
+        </tr>
+        <tr>
+            <th>Họ và tên</th>
+            <td><input type="text" id="name" placeholder="Tên học viên" required></td>
+        </tr>
+        <tr>
+            <th>Số điện thoại</th>
+            <td><input type="text" id="phone" placeholder="Số điện thoại" required></td>
+        </tr>
+        <tr>
+            <th>Lớp</th>
+            <td><input type="text" id="classs" placeholder="Lớp" required></td>
+        </tr>
+        <tr>
+            <th>Ngày sinh</th>
+            <td><input type="date" id="birthday" placeholder="Ngày sinh" required></td>
+        </tr>
+        <tr>
+            <th>Giới tính</th>
+            <td><select id="gender" required >
+                <option value="">Chọn giới tính</option>
+                <option value="Nam">Nam</option>
+                <option value="Nữ">Nữ</option>
+                <option value="Khác">Khác</option>
+            </select></td>
+        </tr>
+        <tr>
+            <th>Ảnh</th>
+            <td><input type="text" id="img" placeholder="Gửi link ảnh vào đây" required></td>
+        </tr>
+        <tr>
+            <th colspan="2">
+                <button onclick="add()">Thêm</button>
+                <button id="saveButton" onclick="save()" style="display: none" >Lưu</button>
+            </th>
+        </tr>
+    </table>
+</form>
+<table id="table2" style=" border-collapse: collapse">
+    <thead>
+    <tr style="background-color: #4169E1" >
+        <th colspan="9" style="color: white"> Danh sách học viên</th>
+    </tr>
+    <tr style="background-color: #d3f6f5">
+        <th>STT</th>
+        <th>Tên</th>
+        <th>Số điện thoại</th>
+        <th>Lớp</th>
+        <th>Ngày sinh</th>
+        <th>Giới tính</th>
+        <th>Ảnh</th>
+        <th colspan="2">Chức năng</th>
+    </tr>
+    </thead>
+    <tbody id="display" style="text-align: center">
+    </tbody>
+</table>
+<input type="hidden" id="currentIndex">
+<script src="main.js"></script>
+<link rel="stylesheet" href="css.css">
+</body>
+</html>
